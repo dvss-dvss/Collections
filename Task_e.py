@@ -11,4 +11,7 @@ print(pupils)
 
 for name in pupils:
     marks = ' '.join(str(mark) for mark in pupils[name])
-    print(f"{name:<30} {marks} --> {(sum(pupils[name]) / MARKS_COUNT):.2f}")
+    print(f"{name:<30} {marks}")
+
+avg_marks = [sum(pupils[name][i] for name in pupils) / n for i in range(MARKS_COUNT)]
+print((" " * 31) + " ".join(f"{mark:>5.2f}" for mark in avg_marks))
