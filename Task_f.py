@@ -3,7 +3,7 @@ from faker import Faker
 
 fake = Faker()
 
-n = int(input('Килькисть учнів: '))
+n = int(input('Кількість учнів: '))
 MARKS_COUNT = 3
 
 pupils = {fake.name(): [randint(4, 12) for _ in range(MARKS_COUNT)] for _ in range(n)}
