@@ -8,11 +8,11 @@ while True:
     elif command == "pop":
         print(queue.pop(0))
     elif command == "back":
-        print(queue[-1])
-    elif command == "front":
         print(queue[0])
     elif command == "size":
         print(len(queue))
+    elif command == "front":
+        print(queue[0])
     elif command == "clear":
         queue.clear()
         print("ok")
